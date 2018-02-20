@@ -56,7 +56,7 @@ class List extends Component {
         <td>{bin.created_at}</td>
         <td>{bin.last_update}</td>
         <td>{bin.total}</td>
-        <td><Link to={`/bin/${bin.hash}`}>Go To {bin.hash}</Link></td>
+        <td><Link to={`/bee-hook-client/bin/${bin.hash}`}>Go To {bin.hash}</Link></td>
       </tr>
     )
   }
