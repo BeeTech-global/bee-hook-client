@@ -115,7 +115,7 @@ class Results extends Component {
     return (
       <li key={index}>
         <p>Time: {request.created_at}</p>
-        <p>Method: {request.method}</p>
+        <p>Method: <b>{request.method}</b></p>
         
         <p>Headers:</p>
         <ul>
@@ -156,6 +156,18 @@ class Results extends Component {
         <ul>
           { this.state.bins.reverse().map(this.renderRequest) }
         </ul>
+
+
+        <p>Examples</p>
+        <code>curl -X GET {this.state.binUrl}</code>
+        <br />
+        <code>curl -X OPTIONS {this.state.binUrl}</code>
+        <br />
+        <code>curl -X POST {this.state.binUrl} -H 'content-type: application/json' -d '{JSON.stringify({ "OI": "SUAVE?", "BELEZA": "FIRMEZA" })}'</code>
+        <br />
+        <code>curl -X PUT {this.state.binUrl} -H 'content-type: application/json' -d '{JSON.stringify({ "OI": "SUAVE?", "BELEZA": "FIRMEZA" })}'</code>
+        <br />
+        <code>curl -X PATCH {this.state.binUrl} -H 'content-type: application/json' -d '{JSON.stringify({ "OI": "SUAVE?", "BELEZA": "FIRMEZA" })}'</code>
       </div>
     );
   }
