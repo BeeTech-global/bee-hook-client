@@ -12,7 +12,7 @@ const url = 'https://hook-mock.herokuapp.com';
 const binService = new BinService({ url });
 
 const App = () => (
-  <Router>
+  <Router basename="/bee-hook-client" >
     <div>
       <ul>
         <li>
