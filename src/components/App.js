@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
 import BinService from '../services/BinService';
-const url = 'https://hook-mock.herokuapp.com';
+const url = 'https://hook.beetech.global';
 
 const binService = new BinService({ url });
 
