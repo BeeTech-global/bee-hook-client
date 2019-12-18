@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://beetech-global.github.io/bee-hook-client",
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.19.0",
     "bootstrap": "^3.3.7",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
